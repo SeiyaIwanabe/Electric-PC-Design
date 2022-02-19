@@ -1,0 +1,129 @@
+/*!*************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/style.scss ***!
+  \*************************************************************************************************************/
+@import url(https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,500;1,500&family=Roboto:wght@700&family=Ubuntu:wght@300&display=swap);
+/*!*****************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js!./node_modules/sass-loader/dist/cjs.js!./src/css/style.scss (1) ***!
+  \*****************************************************************************************************************/
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Ubuntu', sans-serif; }
+
+.main {
+  font-size: 1.2rem;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to right, #6a3f7e, #b94545);
+  overflow: hidden;
+  position: relative;
+  font-family: 'Ubuntu', sans-serif; }
+  .main nav {
+    width: 80%;
+    display: flex;
+    z-index: 1;
+    margin: 20px auto;
+    position: sticky;
+    align-items: center;
+    font-weight: 550; }
+    .main nav .logo-area {
+      flex-basis: 20%;
+      display: flex;
+      align-items: center; }
+      .main nav .logo-area .logo {
+        width: 20%;
+        height: 20%;
+        margin-right: 12px; }
+    .main nav .nav-links {
+      flex: 1;
+      /* 空いてるスペースの余白を強制的に入れてる。flex-growと同じ。 */
+      text-align: right;
+      /* インライン要素だから右寄せできる。a */ }
+      .main nav .nav-links > ul {
+        list-style: none; }
+        .main nav .nav-links > ul > a {
+          font-weight: 600;
+          color: #fff;
+          text-decoration: none;
+          transition: 0.3s; }
+          .main nav .nav-links > ul > a:hover {
+            color: #260a0a; }
+          .main nav .nav-links > ul > a > li {
+            display: inline-block;
+            padding: 0 2rem; }
+  .main .information {
+    width: 1000px;
+    height: 1000px;
+    position: absolute;
+    top: 50%;
+    left: -10%;
+    transform: translateY(-50%); }
+    .main .information .overlay {
+      width: 0;
+      height: 0;
+      border-top: 500px solid #fff;
+      border-right: 500px solid transparent;
+      border-bottom: 500px solid #fff;
+      border-left: 500px solid #fff;
+      top: 0;
+      left: 0;
+      position: absolute; }
+    .main .information .mobile {
+      width: 400px;
+      position: absolute;
+      z-index: 1;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 27%; }
+    .main .information #circle {
+      width: 1000px;
+      height: 1000px;
+      position: absolute;
+      /* background: #ccc; */
+      border-radius: 50%;
+      top: 0;
+      left: 0;
+      transform: rotate(0deg);
+      transition: 1s; }
+      .main .information #circle .feature {
+        position: absolute;
+        display: flex;
+        color: #fff; }
+        .main .information #circle .feature > img {
+          width: 70px; }
+        .main .information #circle .feature > div {
+          margin-left: 20px; }
+        .main .information #circle .feature.one {
+          top: 450px;
+          right: 70px; }
+        .main .information #circle .feature.two {
+          top: 100px;
+          left: 340px;
+          transform: rotate(-90deg); }
+        .main .information #circle .feature.three {
+          bottom: 450px;
+          left: 50px;
+          transform: rotate(-180deg); }
+        .main .information #circle .feature.four {
+          bottom: 150px;
+          right: 370px;
+          transform: rotate(-270deg); }
+    .main .information .control {
+      position: absolute;
+      top: 50%;
+      right: -50%;
+      transform: translateY(-50%);
+      text-align: center; }
+      .main .information .control > img {
+        width: 15px; }
+      .main .information .control #upBtn {
+        cursor: pointer; }
+      .main .information .control #downBtn {
+        cursor: pointer;
+        transform: rotate(-180deg); }
+      .main .information .control > h3 {
+        margin: 20px 0;
+        color: #fff; }
+
